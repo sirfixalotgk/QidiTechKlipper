@@ -458,7 +458,7 @@ class MCU_adc:
 
 # Class to retry sending of a query command until a given response is received
 class RetryAsyncCommand:
-    TIMEOUT_TIME = 5.0
+    TIMEOUT_TIME = 100
     RETRY_TIME = 0.500
     def __init__(self, serial, name, oid=None):
         self.serial = serial
